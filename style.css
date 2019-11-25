@@ -1,0 +1,19 @@
+header {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    opacity: 0.75;
+    
+}
+
+footer {
+    font-family: arial,sans-serif;
+    opacity: 0.75;
+}
+
+.foottop {
+    font-size: 15px;
+}
+
+.footbot {
+    font-size: 13px;
+}
