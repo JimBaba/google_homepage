@@ -2,7 +2,43 @@ header {
     font-family: arial,sans-serif;
     font-size: 13px;
     opacity: 0.75;
-    
+    box-sizing: border-box;    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px, 50px, auto, 50px, 50px, 50px, 50px;
+    grid-template-rows: 50px, auto, 50px, 50px, 50px, 50px, 50px;
+    grid-template-areas: 
+        "header1 header2 . header4 header5 header6 header7"
+        ". . logo logo logo . ."
+        ". . search search search . ."
+        ". . button button2 . . ."
+        ". . lang link . . ."
+        "foottop . . . . . ."
+        "footbot1 footbot2 footbot3 . footbot5 footbot6 footbot7";
+    background-color: yellow; 
+    grid-gap: 5px;
+}
+
+#form {
+    grid-area: search;
+}
+
+#search {
+    grid-area: button;
+}
+
+#lucky {
+    grid-area: button2;
+}
+
+#about {
+    grid-area: header1;
+}
+
+#store {
+    grid-area: header2;
 }
 
 footer {
